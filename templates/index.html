@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>შეაფასეთ მომსახურება</title>
+</head>
+<body>
+    <div class="container">
+        <h2>როგორ მოგვეწონათ მომსახურება?</h2>
+        <p>თქვენი აზრი გვეხმარება გავხდეთ უკეთესები</p>
+        
+        <form action="/process-rating" method="post">
+            <div class="star-buttons">
+                <button type="submit" name="rating" value="5" class="btn-star">⭐⭐⭐⭐⭐ <span>საუკეთესო</span></button>
+                <button type="submit" name="rating" value="4" class="btn-star">⭐⭐⭐⭐ <span>კარგი</span></button>
+                <button type="submit" name="rating" value="3" class="btn-star">⭐⭐⭐ <span>საშუალო</span></button>
+                <button type="submit" name="rating" value="2" class="btn-star">⭐⭐ <span>ცუდი</span></button>
+                <button type="submit" name="rating" value="1" class="btn-star">⭐ <span>ძალიან ცუდი</span></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

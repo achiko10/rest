@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>დაგვიტოვეთ გამოხმაურება</title>
+</head>
+<body>
+    <div class="container">
+        <h2>წუხართ, რომ იმედები გაგიცრუეთ 😔</h2>
+        <p>გთხოვთ დაგვიწეროთ, რა არ მოგეწონათ:</p>
+        
+        <form action="/submit-feedback" method="post">
+            <input type="hidden" name="rating" value="{{ rating }}">
+            <textarea name="comment" rows="5" placeholder="თქვენი შეტყობინება..." required></textarea>
+            <button type="submit" class="btn-submit">გაგზავნა</button>
+        </form>
+    </div>
+</body>
+</html>
